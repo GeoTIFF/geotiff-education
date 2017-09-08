@@ -1,0 +1,30 @@
+{
+  "name": "geotiff-education",
+  "version": "0.0.1",
+  "description": "Repo to hold various Geotiff.io things related to education Edit",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeoTIFF/geotiff-education.git"
+  },
+  "keywords": [
+    "education",
+    "gis",
+    "raster",
+    "imagery",
+    "satellite",
+    "learn"
+  ],
+  "author": "Daniel J. Dufour",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/GeoTIFF/geotiff-education/issues"
+  },
+  "homepage": "https://github.com/GeoTIFF/geotiff-education#readme",
+  "dependencies": {
+    "showdown": "^1.7.3"
+  }
+}
