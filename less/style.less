@@ -1,0 +1,57 @@
+@primary-color: #00897B;
+@accent-color: #ff4081;
+@primary-background-color: white;
+
+@border-radius: 0;
+
+@box-shadow-small: -2px 2px 1px 0 rgba(0,0,0,.1);
+@box-shadow-medium: -3px 3px 1px 0 rgba(0,0,0,.15);
+
+@font-size-small: 14px;
+@font-size-medium: 18px;
+@font-size-large: 24px;
+
+html {
+
+  background: #43C6AC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  body {
+
+    font-size: 0;
+    margin: 0;
+
+    header#menu {
+      background: @primary-background-color;
+      font-size: 14pt;
+      padding: 15px;
+      width: 100%;
+
+      .menu-option {
+          display: inline-block;
+          margin: 0 15px;
+      }
+    }
+
+    #lesson {
+      background-color: @primary-background-color;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 0 2px 0 rgba(0, 0, 0, 0.17);
+      font-size: 14pt;
+      margin: 4rem 2rem 4rem 2rem;
+      max-width: 900px;
+      padding: 30px;
+
+      /*  This is the default for iframes.
+        When you edit the height, width or any other style
+        in the Markdown File, this will overwrite these.   */
+      iframe {
+        height: 400px;
+        overflow: hidden;
+        width: 100%;
+      }
+    }   
+  }
+}

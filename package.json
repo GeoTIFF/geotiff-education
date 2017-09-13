@@ -4,6 +4,7 @@
   "description": "Repo to hold various Geotiff.io things related to education Edit",
   "main": "index.js",
   "scripts": {
+    "lessc": "cd less && lessc style.less ../css/style.css",
     "test": "test"
   },
   "repository": {
@@ -25,6 +26,10 @@
   },
   "homepage": "https://github.com/GeoTIFF/geotiff-education#readme",
   "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
     "showdown": "^1.7.3"
+  },
+  "devDependencies": {
+    "less": "^2.7.2"
   }
 }

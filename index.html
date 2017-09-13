@@ -11,35 +11,32 @@
         });
       }
     </script>
-    <style>
-        #contents {
-            margin: 0 auto;
-            max-width: 900px;
-            padding: 30px;
-        }
-
-        iframe {
-            height: 400px;
-            width: 100%;
-        }
-
-    
-
-    </style>
+    <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
-    <div id="contents">
+    <header id="menu">
+        <div class="menu-option">
+            Home
+        </div>
+        <div class="menu-option">
+            Lessons
+        </div>
+        <div class="menu-option">
+            Create a Lesson
+        </div>
+    </header>
+    <div id="lesson">
     </div>
     <script>
       Promise.all([
           load_script("node_modules/showdown/dist/showdown.min.js"),
-          fetch("lesson-identify.md")
+          fetch("lessons/identify.md")
       ]).then((values) => {
           console.log("loaded showdown library and markdown file", values);
           values[1].text().then((text) => {
               var converter = new showdown.Converter();
               var html = converter.makeHtml(text);
-              document.getElementById("contents").outerHTML = html;
+              document.getElementById("lesson").innerHTML = html;
           });
       });
     </script>
