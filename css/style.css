@@ -25,7 +25,7 @@ html body #lesson {
   background-color: white;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 0 2px 0 rgba(0, 0, 0, 0.17);
   font-size: 14pt;
-  margin: 4rem 2rem 4rem 2rem;
+  margin: 2rem auto;
   max-width: 900px;
   padding: 30px;
   /*  This is the default for iframes.
@@ -33,6 +33,7 @@ html body #lesson {
         in the Markdown File, this will overwrite these.   */
 }
 html body #lesson iframe {
+  border: none;
   height: 400px;
   overflow: hidden;
   width: 100%;
