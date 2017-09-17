@@ -10,7 +10,7 @@ Technically speaking, an image is just rows of pixels.  Each pixel represent a d
 Identifying a pixel means discovering the value of a certain pixel in an image.  You can do this with any basic GIS software, including in your web browser.
 
 The image below is a raster of X.  You can practice identifying pixel values, by clicking different locations in the image:
-<iframe src="https://geotiff.io" style="height: 400px; width: 100%"></iframe>
+<iframe src="https://geotiff.io?hide_menu=true&tool=IdentifyTool&url=/data/example_4326.tif" style="height: 400px; width: 100%"></iframe>
 
 To learn about how the algorithm works, see the code below:
 <iframe src="embed_code?url=http://github.com/GeoTIFF/geotiff-io/blob/master/packages/gio-identify/index.js"></iframe>
