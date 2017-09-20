@@ -1,0 +1,40 @@
+html {
+  background: #43C6AC;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F8FFAE, #43C6AC);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+html body {
+  font-size: 0;
+  margin: 0;
+}
+html body header#menu {
+  background: white;
+  font-size: 14pt;
+  padding: 15px;
+  width: 100%;
+}
+html body header#menu .menu-option {
+  display: inline-block;
+  margin: 0 15px;
+}
+html body #lesson {
+  background-color: white;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 0 2px 0 rgba(0, 0, 0, 0.17);
+  font-size: 14pt;
+  margin: 2rem auto;
+  max-width: 900px;
+  padding: 30px;
+  /*  This is the default for iframes.
+        When you edit the height, width or any other style
+        in the Markdown File, this will overwrite these.   */
+}
+html body #lesson iframe {
+  border: none;
+  height: 400px;
+  overflow: hidden;
+  width: 100%;
+}

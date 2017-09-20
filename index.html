@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GeoTIFF.io Education</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      function load_script(url) {
+        return new Promise((resolve, reject) => {
+          var script = document.createElement("script");
+          script.onload = resolve;
+          script.src = url;
+          document.body.appendChild(script);
+        });
+      }
+    </script>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    <header id="menu">
+        <div class="menu-option forthcoming">
+            Home
+        </div>
+        <div class="menu-option forthcoming">
+            Lessons
+        </div>
+        <div class="menu-option forthcoming">
+            Create a Lesson
+        </div>
+    </header>
+    <div id="lesson">
+    </div>
+    <script>
+      Promise.all([
+          load_script("node_modules/showdown/dist/showdown.min.js"),
+          fetch("lessons/identify.md")
+      ]).then((values) => {
+          console.log("loaded showdown library and markdown file", values);
+          values[1].text().then((text) => {
+              var converter = new showdown.Converter();
+              var html = converter.makeHtml(text);
+              document.getElementById("lesson").innerHTML = html;
+          });
+      });
+
+      load_script("node_modules/sweetalert/dist/sweetalert.min.js").then(() => {
+        console.log("loaded sweet alert");
+        
+      });
+
+      document.querySelectorAll(".forthcoming").forEach(element => {
+          element.onclick = () => swal("Feature Coming Soon!");
+      });
+
+    </script>
+  </body>
+</html>

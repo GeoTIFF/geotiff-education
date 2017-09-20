@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            NOTES:
+            - Can't do fetch on gist-it
+            - Can't just append script bc can't document.write programmatically
+        -->
+        <style>
+            iframe {
+                border: none;
+                height: 100%;
+                position: absolute;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="embedded_code"></div>
+        <script>
+
+
+            var script = document.createElement("script");
+            var url = window.location.search.replace("?url=","");
+            script.src = "http://gist-it.appspot.com/" + url;
+
+            var iframe = document.createElement("iframe");
+            document.getElementById("embedded_code").appendChild(iframe);
+            iframe.contentWindow.document.open();
+            iframe.contentWindow.document.write(script.outerHTML);
+            iframe.contentWindow.document.close();
+
+
+        </script>
+ 
+    </body>
+</html>
