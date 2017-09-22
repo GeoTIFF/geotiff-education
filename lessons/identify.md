@@ -13,4 +13,4 @@ The image below is a raster of X.  You can practice identifying pixel values, by
 <iframe src="https://geotiff.io?hide_menu=true&tool=IdentifyTool&url=/data/example_4326.tif" style="height: 400px; width: 100%"></iframe>
 
 To learn about how the algorithm works, see the code below:
-<iframe src="embed_code?url=http://github.com/GeoTIFF/geotiff-io/blob/master/packages/gio-identify/index.js"></iframe>
+<iframe src="embed_code?url=http://github.com/GeoTIFF/geotiff-io/blob/master/packages/gio-identify/identify.js"></iframe>
