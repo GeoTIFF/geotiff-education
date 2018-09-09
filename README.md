@@ -2,7 +2,7 @@
 Repository of Sample Lessons on Remote Sensing and Raster Analysis
 Powered by [GeoTIFF.io](https://geotiff.io)
 
-View it here! http://danieljdufour.com/geotiff-education/
+View it here! http://ed.geotiff.io
 
 [GeoTIFF.io](https://geotiff.io) is flexible and works with many different types of teaching/learning methods.  You can use it as a standalone website or easily embed it in existing online course material.  However you teach or learn, we want to support you!
 
